@@ -13,6 +13,6 @@ const limiter = rateLimit({
 
 app.use(limiter);
 app.use(express.json());
-app.use("/weather", routerWeather);
+app.use("api/weather", routerWeather);
 
 export default app;
